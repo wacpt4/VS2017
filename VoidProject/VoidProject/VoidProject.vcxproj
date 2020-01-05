@@ -123,6 +123,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\github\Win32Project\Win32Project\App_First.cpp" />
+    <ClCompile Include="..\..\..\..\github\Win32Project\Win32Project\DeleteFile.cpp" />
+    <ClCompile Include="..\..\..\..\github\Win32Project\Win32Project\ShellExecuteEx.cpp" />
+    <ClCompile Include="..\..\..\..\github\Win32Project\Win32Project\URLDownLoadToFile.cpp" />
     <ClCompile Include="APP.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
