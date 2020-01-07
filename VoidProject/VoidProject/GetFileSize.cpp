@@ -1,4 +1,4 @@
-//¿ìËÙ×¢ÊÍÔÚ¹¤¾ßÀ¸ÄÇÀïÀï
+//å¿«é€Ÿæ³¨é‡Šåœ¨å·¥å…·æ é‚£é‡Œé‡Œ è·å–å¤§äº4GB
 /*
 #include <Windows.h>
 #include <tchar.h>
@@ -10,12 +10,12 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPreInstance, LPSTR CmdLine,
 
 	HANDLE hFile = CreateFile(_T("D:\\456.png"), GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
 
-	//¾ä±úĞÎÊ½
+	//å¥æŸ„å½¢å¼
 if(hFile != INVALID_HANDLE_VALUE){
 	DWORD dwFileSzie = GetFileSize(hFile, NULL);
 
 	TCHAR szFileSize{ 128 } = { 0 };
-	_stprintf(szFileSize, _T("ÎÄ¼şµÄ´óĞ¡ÊÇ£º&d"), dwFileSzie);
+	_stprintf(szFileSize, _T("æ–‡ä»¶çš„å¤§å°æ˜¯ï¼š&d"), dwFileSzie);
 	
 	CloseHandle(hFile);
 }
@@ -32,7 +32,7 @@ using namespace std;
 
 int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int nCmdShow)
 {
-	//HANDLE hFile = CreateFile(_T("I:\\ÏµÍ³ÖØ×°\\DEEPIN-LITEXP-6.2.iso"), GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+	//HANDLE hFile = CreateFile(_T("I:\\ç³»ç»Ÿé‡è£…\\DEEPIN-LITEXP-6.2.iso"), GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
 	//if (hFile != INVALID_HANDLE_VALUE)
 	//{
 	//	DWORD dwFileSizeHigh = 0;
@@ -41,16 +41,16 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdL
 	//	LONGLONG lFileSize = (((LONGLONG)dwFileSizeHigh) << 32) | dwFileSize;
 
 	//	TCHAR szFileSize[128] = { 0 };
-	//	_stprintf(szFileSize, _T("ÎÄ¼şµÄ´óĞ¡ÊÇ£º%lld"), lFileSize);
+	//	_stprintf(szFileSize, _T("æ–‡ä»¶çš„å¤§å°æ˜¯ï¼š%lld"), lFileSize);
 	//	MessageBox(NULL, szFileSize, _T("Tip"), MB_OK);
 	//	CloseHandle(hFile);
 	//}
 	//else
 	//{
-	//	MessageBox(NULL, _T("ÎÄ¼ş´ò¿ªÊ§°Ü£¡"), _T("Tip"), MB_OK);
+	//	MessageBox(NULL, _T("æ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼"), _T("Tip"), MB_OK);
 	//}
-	//¿ÉÒÔ»ñÈ¡´óÓÚ4GB
-	HANDLE hFile = CreateFile(_T("I:\\ÏµÍ³ÖØ×°\\cn_windows_10_business_editions_version_1809_updated_dec_2018_x64_dvd_f5563b4e.iso"), GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+	//å¯ä»¥è·å–å¤§äº4GB
+	HANDLE hFile = CreateFile(_T("I:\\ç³»ç»Ÿé‡è£…\\cn_windows_10_business_editions_version_1809_updated_dec_2018_x64_dvd_f5563b4e.iso"), GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
 	if (hFile != INVALID_HANDLE_VALUE)
 	{
 		LARGE_INTEGER fileSize = { 0 };
@@ -58,7 +58,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdL
 		if (bRet)
 		{
 			TCHAR szFileSize[128] = { 0 };
-			_stprintf(szFileSize, _T("ÎÄ¼şµÄ´óĞ¡ÊÇ£º%lld"), fileSize.QuadPart);
+			_stprintf(szFileSize, _T("æ–‡ä»¶çš„å¤§å°æ˜¯ï¼š%lld"), fileSize.QuadPart);
 			MessageBox(NULL, szFileSize, _T("Tip"), MB_OK);
 		}
 
@@ -66,7 +66,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdL
 	}
 	else
 	{
-		MessageBox(NULL, _T("ÎÄ¼ş´ò¿ªÊ§°Ü£¡"), _T("Tip"), MB_OK);
+		MessageBox(NULL, _T("æ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼"), _T("Tip"), MB_OK);
 	}
 
 	return 0;
